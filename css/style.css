@@ -98,7 +98,7 @@ main .searcher div a {
   justify-content: center;
   border-radius: 4px;
 }
-main .searcher h4 {
+main .searcher a {
   display: flex;
   align-items: center;
   justify-content: center;
