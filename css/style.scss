@@ -1,0 +1,178 @@
+@import "variable";
+@import "mixins";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    padding: 3%;
+    background-color: map-get($colors , sub1 );
+    
+    // width: 100%; 
+}
+
+main{
+    display: grid;
+    font-family: $fonts;
+    width: 100%;
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+    
+            li{
+                padding: 10px;
+                
+                a{
+                    color: map-get($colors , sub3 );
+                    font-family: $fonts;
+                    font-weight: 400;
+                }
+            }
+        }
+    
+        .login{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            font-weight: 400;
+    
+            a{
+                background: map-get($colors, subb );
+                color: map-get($colors, mainn );
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 93px;
+                height: 51px;
+                border-radius: 4px;
+                // padding: 2px 2px;
+            }
+            .Create{
+                background: map-get($colors, mainn );
+                color: map-get($colors, sub2 );
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 166px;
+    
+            }
+        }
+    }
+    .searcher{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        h1{
+            font-size: 5rem;
+            font-weight: 400;
+        }
+    
+       div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        
+        #search{
+            background-image: url(../images/search-svgrepo-com\ 1.png);
+            background-repeat: no-repeat;
+            // background-attachment: fixed;
+            background-position: 10px ;
+            text-indent: 30px;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: center;
+            // align-items: center;
+            padding: 10px;
+            // margin: 20px 250px;
+            // gap: 24px;
+            width: 660px;
+            height: 64px;
+            border: 1px solid map-get($colors , sub4 );
+            border-radius: 4px;
+        }
+    
+        a{
+            background: map-get($colors, mainn );
+            color: map-get($colors, sub2 );
+            width: 160px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+       }
+    
+       h4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        color: map-get($colors , sub3 );
+       }
+    }
+    
+    .target{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 1440px;
+        height: 39.3125rem;
+        background: map-get($colors, main );
+        // margin: 0;
+        
+        h2{
+            
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            letter-spacing: -0.06em;
+            color: map-get($colors , sub2 );
+            margin: 10px 0 100px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding-bottom: 50px;
+    
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: map-get($colors , sub2 );
+                border: 2px solid map-get($colors , sub5);
+                width: 290px;
+                height: 290px;
+            }
+        }
+    }
+}
+

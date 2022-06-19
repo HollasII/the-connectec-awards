@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 3%;
+  background-color: #F5F5F5;
+}
+
+main {
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main header ul li {
+  padding: 10px;
+}
+main header ul li a {
+  color: #0C0114;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+main header .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 400;
+}
+main header .login a {
+  background: #EEE8F2;
+  color: #3E0563;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 93px;
+  height: 51px;
+  border-radius: 4px;
+}
+main header .login .Create {
+  background: #3E0563;
+  color: #fff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+}
+main .searcher {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .searcher h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+main .searcher div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main .searcher div #search {
+  background-image: url(../images/search-svgrepo-com\ 1.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  text-indent: 30px;
+  padding: 10px;
+  width: 660px;
+  height: 64px;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+}
+main .searcher div a {
+  background: #3E0563;
+  color: #fff;
+  width: 160px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+main .searcher h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #0C0114;
+}
+main .target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 39.3125rem;
+  background: #1F0231;
+}
+main .target h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: -0.06em;
+  color: #fff;
+  margin: 10px 0 100px;
+}
+main .target ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+main .target ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 2px solid #9E82B1;
+  width: 290px;
+  height: 290px;
+}/*# sourceMappingURL=style.css.map */
