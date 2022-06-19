@@ -8,7 +8,6 @@
 
 body {
   padding: 3%;
-  background-color: #F5F5F5;
 }
 
 main {
@@ -20,6 +19,7 @@ main header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #fff;
 }
 main header ul {
   display: flex;
@@ -66,6 +66,7 @@ main .searcher {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #F5F5F5;
 }
 main .searcher h1 {
   font-size: 5rem;
@@ -109,6 +110,9 @@ main .searcher a {
   line-height: 1.375rem;
   color: #0C0114;
 }
+main .searcher a:hover {
+  cursor: pointer;
+}
 main .target {
   display: flex;
   flex-direction: column;
@@ -117,6 +121,9 @@ main .target {
   width: 1440px;
   height: 39.3125rem;
   background: #1F0231;
+  background-image: url(../images/Frame\ 48.png), url(../images/Frame\ 47.png), url(../images/Frame\ 46.png), url(../images/Frame\ 45.png);
+  background-position: left top, left bottom, right top, right bottom;
+  background-repeat: no-repeat;
 }
 main .target h2 {
   font-weight: 400;
@@ -143,4 +150,145 @@ main .target ul li {
   border: 2px solid #9E82B1;
   width: 290px;
   height: 290px;
+}
+main .the-connected {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  background-image: url(../images/Group\ 21.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+main .the-connected img {
+  padding: 50px;
+}
+main .the-connected div {
+  padding-right: 50px;
+}
+main .the-connected div h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.688rem;
+  letter-spacing: -0.06rem;
+  margin: 8px 0;
+  color: #0C0114;
+}
+main .the-connected div hr {
+  background: #FA9706;
+  width: 88px;
+  height: 4px;
+  border-radius: 6px;
+  margin: 5px 0;
+}
+main .the-connected div p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #0C0114;
+  margin: 10px 0;
+}
+main .the-connected div a {
+  background: #3E0563;
+  color: #fff;
+  gap: 0.625rem;
+  margin: 1rem 0 0;
+  width: 131px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+main .celebrated {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  background-image: url(../images/Frame\ 40.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+main .celebrated .text-holder {
+  padding: 50px;
+}
+main .celebrated .text-holder h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.688rem;
+  letter-spacing: -0.06rem;
+  margin: 8px 0;
+  color: #0C0114;
+}
+main .celebrated .text-holder hr {
+  background: #FA9706;
+  width: 88px;
+  height: 4px;
+  border-radius: 6px;
+  margin: 5px 0;
+}
+main .celebrated .text-holder p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #0C0114;
+  margin: 10px 0;
+}
+main .celebrated .text-holder a {
+  background: #3E0563;
+  color: #fff;
+  gap: 0.625rem;
+  margin: 1rem 0 0;
+  width: 131px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+main .celebrated .img-holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  padding: 50px;
+}
+main .talent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fff;
+  padding: 50px;
+}
+main .talent div {
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+main .talent div img {
+  margin: 0.5rem;
+}
+main .talent div h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #3E0563;
+  margin: 0.5rem;
+}
+main .talent div p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  text-align: center;
+  color: #0C0114;
+  margin: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
