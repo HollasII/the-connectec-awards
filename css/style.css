@@ -291,4 +291,38 @@ main .talent div p {
   text-align: center;
   color: #0C0114;
   margin: 0.5rem;
+}
+main .about {
+  background: #3E0563;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 5%;
+  color: #fff;
+}
+main .about .about-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+  padding: 0;
+}
+main .about .about-list h4 {
+  color: #FA9706;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.188rem;
+}
+main .about .about-list a {
+  color: #fff;
+}
+main .about .about-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+main .end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
 }/*# sourceMappingURL=style.css.map */
