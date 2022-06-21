@@ -348,7 +348,10 @@ main{
     }
 
     .about{
-        background: map-get($colors , mainn );
+        background: map-get($colors , main );
+        background-image: url(../images/Frame\ 45.png), url(../images/Frame\ 46.png), url(../images/Frame\ 48.png);
+        background-position: right top, center, bottom center ;
+        background-repeat: no-repeat;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         padding: 5%;
@@ -389,4 +392,4 @@ main{
 
     }
 }
-
+@include create;

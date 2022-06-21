@@ -293,7 +293,10 @@ main .talent div p {
   margin: 0.5rem;
 }
 main .about {
-  background: #3E0563;
+  background: #1F0231;
+  background-image: url(../images/Frame\ 45.png), url(../images/Frame\ 46.png), url(../images/Frame\ 48.png);
+  background-position: right top, center, bottom center;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   padding: 5%;
@@ -325,4 +328,135 @@ main .end {
   align-items: center;
   justify-content: space-between;
   padding: 30px 0;
+}
+
+.create-body {
+  background: #1F0231;
+  background-image: url(../images/Group\ 5.png), url(../images/Group\ 6.png), url(../images/Group\ 9.png), url(../images/Group\ 7.png), url(../images/Group\ 8.png), url(../images/Group\ 4.png);
+  background-position: left top, left center, left bottom, right top, right center, right bottom;
+  background-repeat: no-repeat;
+}
+
+.create-form {
+  background: #fff;
+  width: 547px;
+  margin: 10% 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.create-form h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  text-align: center;
+  letter-spacing: -0.04rem;
+  color: #0C0114;
+  margin: 0.625rem;
+}
+.create-form h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  letter-spacing: -0.04rem;
+  color: #0C0114;
+  margin: 0.625rem;
+}
+.create-form h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.188rem;
+  text-align: center;
+  color: #0C0114;
+  margin: 0.938rem;
+}
+.create-form h3 a {
+  color: #FA9706;
+}
+.create-form button {
+  width: 464px;
+  height: 3.5rem;
+  background-color: rgba(216, 205, 224, 0.1);
+  border: 1px solid #D8CDE0;
+}
+.create-form button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  color: #150221;
+  text-align: center;
+}
+.create-form button a img {
+  margin: 0 0.625rem;
+}
+.create-form .orHold {
+  margin: 0.938rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  text-align: center;
+}
+.create-form .orHold img {
+  height: 1px;
+  margin: 0 0.313rem;
+}
+.create-form .form-fill {
+  width: 464px;
+  height: 717px;
+}
+.create-form .form-fill div {
+  margin: 1.25rem 0;
+}
+.create-form .form-fill label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #0C0114;
+}
+.create-form .form-fill input, .create-form .form-fill select {
+  width: 464px;
+  height: 3.25rem;
+  border: 1px solid #D8CDE0;
+  border-radius: 0.25rem;
+}
+.create-form .form-fill .name-fill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create-form .form-fill .name-fill input {
+  width: 216px;
+  height: 3rem;
+}
+.create-form .form-fill h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-align: center;
+  color: #0C0114;
+  margin: 1.875rem 0;
+}
+.create-form .form-fill h4 a {
+  color: #FA9706;
+}
+.create-form .form-fill button {
+  margin: 1.25rem 0 0;
+  background: #3E0563;
+}
+.create-form .form-fill button a {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
