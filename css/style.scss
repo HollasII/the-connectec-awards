@@ -349,7 +349,7 @@ main{
 
     .about{
         background: map-get($colors , main );
-        background-image: url(../images/Frame\ 45.png), url(../images/Frame\ 46.png), url(../images/Frame\ 48.png);
+        background-image: url(../images/Frame\ 45.png), url(../images/Frame\ 46.png), url(../images/Frame\ 482.png);
         background-position: right top, center, bottom center ;
         background-repeat: no-repeat;
         display: grid;
@@ -393,3 +393,4 @@ main{
     }
 }
 @include create;
+@include logins;
