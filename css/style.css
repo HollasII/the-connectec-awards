@@ -20,15 +20,16 @@ main header {
   align-items: center;
   justify-content: space-between;
   background: #fff;
+  box-shadow: 0px 1px 0px rgba(219, 219, 219, 0.5);
 }
 main header ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 3.125rem;
 }
 main header ul li {
-  padding: 10px;
+  padding: 0.625rem;
 }
 main header ul li a {
   color: #0C0114;
@@ -39,7 +40,7 @@ main header .login {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 1.875rem;
   font-weight: 400;
 }
 main header .login a {
@@ -48,9 +49,9 @@ main header .login a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 93px;
-  height: 51px;
-  border-radius: 4px;
+  width: 5.813rem;
+  height: 3.188rem;
+  border-radius: 0.25rem;
 }
 main header .login .Create {
   background: #3E0563;
@@ -79,6 +80,9 @@ main .searcher div {
   gap: 50px;
 }
 main .searcher div #search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(../images/search-svgrepo-com\ 1.png);
   background-repeat: no-repeat;
   background-position: 10px;
@@ -595,18 +599,18 @@ main .top-head h1 {
   text-align: center;
   letter-spacing: -0.04em;
   color: #0C0114;
-  margin: 5px 0;
+  margin: 0.313rem 0;
 }
 main .top-head p {
   font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
   text-align: center;
   color: #808080;
-  margin: 0 0 10px;
+  margin: 0 0 0.625rem;
 }
 main .top-head img {
-  margin: 20px;
+  margin: 1.25rem;
 }
 main .conect-body {
   display: grid;
@@ -615,19 +619,19 @@ main .conect-body {
   justify-content: center;
 }
 main .conect-body img {
-  padding: 50px;
+  padding: 3.125rem;
 }
 main .conect-body .body-text {
-  padding: 0 50px;
+  padding: 0 3.125rem;
 }
 main .conect-body .body-text h2 {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.758rem;
   line-height: 3.625rem;
   letter-spacing: -0.06rem;
   text-align: center;
   letter-spacing: -0.04em;
-  margin: 8px 0;
+  margin: 0.5rem 0;
   color: #0C0114;
 }
 main .conect-body .body-text p {
@@ -636,4 +640,159 @@ main .conect-body .body-text p {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #808080;
+}
+
+main .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .login ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+main .past-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+main .past-top h1 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.688rem;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #0C0114;
+}
+main .past-top p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  text-align: center;
+  color: #808080;
+}
+main .past-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 1.875rem;
+  height: 804px;
+  margin: 0.625rem;
+}
+main .past-image h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  text-align: center;
+  color: #0C0114;
+}
+main .past-image p {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  color: #3E0563;
+}
+
+main .searcher {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+}
+main .searcher h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+main .searcher div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main .searcher div #search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/search-svgrepo-com\ 1.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  text-indent: 30px;
+  padding: 10px;
+  width: 660px;
+  height: 64px;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+}
+main .searcher div a {
+  background: #3E0563;
+  color: #fff;
+  width: 160px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+main .searcher a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #0C0114;
+}
+main .searcher a:hover {
+  cursor: pointer;
+}
+main .target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 39.3125rem;
+  background: #1F0231;
+  background-image: url(../images/Frame\ 48.png), url(../images/Frame\ 47.png), url(../images/Frame\ 46.png), url(../images/Frame\ 45.png);
+  background-position: top left, left bottom, right top, right bottom;
+  background-repeat: no-repeat;
+}
+main .target h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: -0.06em;
+  color: #fff;
+  margin: 10px 0 100px;
+}
+main .target ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+main .target ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 2px solid #9E82B1;
+  width: 290px;
+  height: 290px;
+}
+main .searcher {
+  background: none;
 }/*# sourceMappingURL=style.css.map */

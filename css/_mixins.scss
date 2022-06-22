@@ -141,15 +141,16 @@
         align-items: center;
         justify-content: space-between;
         background: map-get($colors , sub2 );
+        box-shadow: 0px 1px 0px map-get($map:$colors , $key:shadow );
         
         ul{
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 50px;
+            gap: 3.125rem;
     
             li{
-                padding: 10px;
+                padding: 0.625rem;
                 
                 a{
                     color: map-get($colors , sub3 );
@@ -163,7 +164,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 30px;
+            gap: 1.875rem;
             font-weight: 400;
     
             a{
@@ -172,9 +173,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 93px;
-                height: 51px;
-                border-radius: 4px;
+                width: 5.813rem;
+                height: 3.188rem;
+                border-radius: 0.25rem;
                 // padding: 2px 2px;
             }
             .Create{
@@ -263,7 +264,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            // margin: 20px;
+            // margin: 1.25rem;
     
             h1{
                 font-weight: 600;
@@ -272,19 +273,19 @@
                 text-align: center;
                 letter-spacing: -0.04em;
                 color: map-get($colors , sub3 );
-                margin: 5px 0;
+                margin: 0.313rem 0;
     
             }
             p{
                 font-weight: 300;
-                font-size: 24px;
-                line-height: 29px;
+                font-size: 1.5rem;
+                line-height: 1.813rem;
                 text-align: center;
                 color: map-get($colors , connected );
-                margin: 0 0 10px;
+                margin: 0 0 0.625rem;
             }
             img{
-                margin: 20px;
+                margin: 1.25rem;
             }
         }
     
@@ -295,22 +296,22 @@
             justify-content: center;
     
             img{
-                padding: 50px;
+                padding: 3.125rem;
             }
             .body-text{
-                padding: 0 50px;
+                padding: 0 3.125rem;
                 // width: 585px;
                 // height: 280px;
                 // display: grid;
     
                 h2{
                     font-weight: 600;
-                    font-size: 3rem;
+                    font-size: 2.758rem;
                     line-height: 3.625rem;
                     letter-spacing: -0.06rem;
                     text-align: center;
                     letter-spacing: -0.04em;
-                    margin: 8px 0;
+                    margin: 0.5rem 0;
                     color: map-get($colors , sub3 );
                 }
                 
@@ -322,6 +323,212 @@
                     color: map-get($colors , connected );
                 }
             }
+        }
+    }
+}
+
+@mixin votes {
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.625rem;
+            }
+        }
+    }
+}
+@mixin search {
+    .searcher{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: map-get($colors , sub1 );
+    
+        h1{
+            font-size: 5rem;
+            font-weight: 400;
+        }
+    
+       div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        
+        #search{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../images/search-svgrepo-com\ 1.png);
+            background-repeat: no-repeat;
+            // background-attachment: fixed;
+            background-position: 10px ;
+            text-indent: 30px;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: center;
+            // align-items: center;
+            padding: 10px;
+            // margin: 20px 250px;
+            // gap: 24px;
+            width: 660px;
+            height: 64px;
+            border: 1px solid map-get($colors , sub4 );
+            border-radius: 4px;
+        }
+    
+        a{
+            background: map-get($colors, mainn );
+            color: map-get($colors, sub2 );
+            width: 160px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+       }
+    
+       a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        color: map-get($colors , sub3 );
+        &:hover{
+            cursor: pointer;
+        }
+       }
+    }
+    
+    .target{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // width: 1440px;
+        height: 39.3125rem;
+        background: map-get($colors, main );
+        background-image: url(../images/Frame\ 48.png), url(../images/Frame\ 47.png), url(../images/Frame\ 46.png), url(../images/Frame\ 45.png);
+        background-position: top left, left bottom, right top, right bottom;
+        background-repeat: no-repeat;
+        // margin: 0;
+        
+        h2{
+            
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            text-align: center;
+            letter-spacing: -0.06em;
+            color: map-get($colors , sub2 );
+            margin: 10px 0 100px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding-bottom: 50px;
+    
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: map-get($colors , sub2 );
+                border: 2px solid map-get($colors , sub5);
+                width: 290px;
+                height: 290px;
+            }
+        }
+    }
+}
+@mixin past {
+    main{
+        @include votes();
+        .past-top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            h1{
+                font-weight: 600;
+                font-size: 2.25rem;
+                line-height: 2.688rem;
+                text-align: center;
+                letter-spacing: -0.04em;
+                color: map-get($colors, sub3 );
+            }
+            p{
+                font-weight: 300;
+                font-size: 1.5rem;
+                line-height: 1.813rem;
+                text-align: center;
+                color: map-get($colors , connected );
+
+            }
+        }
+
+        .past-image{
+            // display: grid;
+            // grid-template-columns: repeat(4, 1fr);
+            // grid-template-rows: repeat(4, 1fr);
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            display: flex;
+            // flex-direction: row;
+            flex-wrap: wrap;
+            // border: 1px solid red;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            gap: 1.875rem;
+            // width: 100%;
+            height: 804px;
+            margin: 0.625rem;
+            // align-items: center;
+            // justify-content: center;
+            // gap: 40px;
+
+            h3{
+                font-weight: 600;
+                font-size: 1.5rem;
+                line-height: 1.813rem;
+                text-align: center;
+                color: map-get($map:$colors , $key:sub3 );
+            }
+            
+            p{
+                font-weight: 600;
+                font-size: 1.125rem;
+                line-height: 1.375rem;
+                text-align: center;
+                color: map-get($map:$colors , $key:mainn );
+            }
+        }
+    }
+}
+
+@mixin category {
+    main{
+        @include search();
+
+        .searcher{
+            background: none;
         }
     }
 }
