@@ -5,6 +5,12 @@
     background-repeat: no-repeat;
 }
 
+@mixin genMain {
+    display: grid;
+    font-family: $fonts;
+    width: 100%;
+    @include heading;
+}
 @mixin formBod {
     background: map-get($colors, sub2 );
     width: 547px;
@@ -129,6 +135,61 @@
     }
 }
 
+@mixin heading {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: map-get($colors , sub2 );
+        
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+    
+            li{
+                padding: 10px;
+                
+                a{
+                    color: map-get($colors , sub3 );
+                    font-family: $fonts;
+                    font-weight: 400;
+                }
+            }
+        }
+    
+        .login{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            font-weight: 400;
+    
+            a{
+                background: map-get($colors, subb );
+                color: map-get($colors, mainn );
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 93px;
+                height: 51px;
+                border-radius: 4px;
+                // padding: 2px 2px;
+            }
+            .Create{
+                background: map-get($colors, mainn );
+                color: map-get($colors, sub2 );
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 166px;
+    
+            }
+        }
+    }
+}
+
 @mixin create {
     .create-body{
        @include formBack();
@@ -186,6 +247,81 @@
                 }
             }
            }
+        }
+    }
+}
+
+@mixin connected {
+    main{
+        // display: grid;
+        // font-family: $fonts;
+        // width: 100%;
+        // @include heading;
+    
+        .top-head{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // margin: 20px;
+    
+            h1{
+                font-weight: 600;
+                font-size: 2.25rem;
+                line-height: 2.688rem;
+                text-align: center;
+                letter-spacing: -0.04em;
+                color: map-get($colors , sub3 );
+                margin: 5px 0;
+    
+            }
+            p{
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: map-get($colors , connected );
+                margin: 0 0 10px;
+            }
+            img{
+                margin: 20px;
+            }
+        }
+    
+        .conect-body{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+    
+            img{
+                padding: 50px;
+            }
+            .body-text{
+                padding: 0 50px;
+                // width: 585px;
+                // height: 280px;
+                // display: grid;
+    
+                h2{
+                    font-weight: 600;
+                    font-size: 3rem;
+                    line-height: 3.625rem;
+                    letter-spacing: -0.06rem;
+                    text-align: center;
+                    letter-spacing: -0.04em;
+                    margin: 8px 0;
+                    color: map-get($colors , sub3 );
+                }
+                
+                p{
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.125rem;
+                    line-height: 1.375rem;
+                    color: map-get($colors , connected );
+                }
+            }
         }
     }
 }

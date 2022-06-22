@@ -7,7 +7,7 @@
 }
 
 body {
-  padding: 3%;
+  margin: 3%;
 }
 
 main {
@@ -118,11 +118,10 @@ main .target {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1440px;
   height: 39.3125rem;
   background: #1F0231;
   background-image: url(../images/Frame\ 48.png), url(../images/Frame\ 47.png), url(../images/Frame\ 46.png), url(../images/Frame\ 45.png);
-  background-position: left top, left bottom, right top, right bottom;
+  background-position: top left, left bottom, right top, right bottom;
   background-repeat: no-repeat;
 }
 main .target h2 {
@@ -581,4 +580,60 @@ main .end {
 }
 .log-body .log-form .form-fill h4 a {
   color: #3E0563;
+}
+
+main .top-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .top-head h1 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.688rem;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #0C0114;
+  margin: 5px 0;
+}
+main .top-head p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #808080;
+  margin: 0 0 10px;
+}
+main .top-head img {
+  margin: 20px;
+}
+main .conect-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+main .conect-body img {
+  padding: 50px;
+}
+main .conect-body .body-text {
+  padding: 0 50px;
+}
+main .conect-body .body-text h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  letter-spacing: -0.06rem;
+  text-align: center;
+  letter-spacing: -0.04em;
+  margin: 8px 0;
+  color: #0C0114;
+}
+main .conect-body .body-text p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #808080;
 }/*# sourceMappingURL=style.css.map */

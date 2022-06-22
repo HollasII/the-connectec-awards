@@ -11,68 +11,14 @@
 }
 
 body{
-    padding: 3%;
+    // padding: 3%;
+    margin: 3%;
     
     // width: 100%; 
 }
 
 main{
-    display: grid;
-    font-family: $fonts;
-    width: 100%;
-
-    header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: map-get($colors , sub2 );
-        
-        ul{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 50px;
-    
-            li{
-                padding: 10px;
-                
-                a{
-                    color: map-get($colors , sub3 );
-                    font-family: $fonts;
-                    font-weight: 400;
-                }
-            }
-        }
-    
-        .login{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            font-weight: 400;
-    
-            a{
-                background: map-get($colors, subb );
-                color: map-get($colors, mainn );
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 93px;
-                height: 51px;
-                border-radius: 4px;
-                // padding: 2px 2px;
-            }
-            .Create{
-                background: map-get($colors, mainn );
-                color: map-get($colors, sub2 );
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                width: 166px;
-    
-            }
-        }
-    }
+    @include genMain;
     .searcher{
         padding: 3rem;
         display: flex;
@@ -144,11 +90,11 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 1440px;
+        // width: 1440px;
         height: 39.3125rem;
         background: map-get($colors, main );
         background-image: url(../images/Frame\ 48.png), url(../images/Frame\ 47.png), url(../images/Frame\ 46.png), url(../images/Frame\ 45.png);
-        background-position: left top, left bottom, right top, right bottom;
+        background-position: top left, left bottom, right top, right bottom;
         background-repeat: no-repeat;
         // margin: 0;
         
@@ -394,3 +340,4 @@ main{
 }
 @include create;
 @include logins;
+@include connected;
