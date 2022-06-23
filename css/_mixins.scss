@@ -465,6 +465,7 @@
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
+            margin: 10px;
             h1{
                 font-weight: 600;
                 font-size: 2.25rem;
@@ -524,11 +525,80 @@
 }
 
 @mixin category {
+    
     main{
+        // @include genMain();
         @include search();
 
         .searcher{
             background: none;
+            
+            h1{
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 43px;
+                text-align: center;
+                letter-spacing: -0.04em;
+                color: #0C0114;
+            }
+            .search{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // border: 1px solid black;
+
+                a{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .categories{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            gap: 24px;
+            width: 1280px;
+            height: 824px;
+
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 40px;
+
+                width: 1280px;
+                height: 188px;
+
+                div{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 290px;
+                    height: 188px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
+                    border-radius: 8px;
+
+                    h4{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #0C0114;
+                    }
+
+                    a{
+                        position: absolute;
+                        top: 83%;
+                        left: 83%;
+                    }
+                }
+            }
         }
     }
 }
